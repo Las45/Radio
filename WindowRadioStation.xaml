@@ -1,0 +1,30 @@
+﻿<Window x:Class="Radio.WindowRadioStation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Radio"
+        mc:Ignorable="d"
+        Title="WindowRadioStation" Height="170" Width="200">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Label Name="LabelName" Content="Name:"></Label>
+                <TextBox x:Name="TextBoxStationName" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <Label  Content="Volume: "></Label>
+                <Label Name="LabelVolume" Content="0%"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label  Content="Frequency: "></Label>
+                <Label Name="LabelFrequency" Content="0Hz"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Click="Button_Click" Width="50" Margin="20 0 20 0" Content="Ok"></Button>
+                <Button Click="Button_Click_1" Width="50" Margin="20 0 20 0" Content="Abort"></Button>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
